@@ -85,7 +85,7 @@
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
-        android:text=" Observera din nuvarande resa har en försening\nmellan Burlöv station och Malmö C"
+        android:text="Observera din nuvarande resa har en försening mellan Burlöv station och Malmö C"
         android:textAlignment="textStart"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -142,24 +142,24 @@
         android:id="@+id/imageButton6"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="112dp"
         android:background="?android:attr/selectableItemBackground"
         android:foregroundTint="#000000"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:srcCompat="@drawable/ic_baseline_train_50" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="99dp"
         android:layout_marginBottom="8dp"
         android:text="Min resa"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView9" />
+        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="@+id/imageButton6" />
 
     <ImageButton
         android:id="@+id/imageButton3"
