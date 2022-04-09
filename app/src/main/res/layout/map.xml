@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundTint="#000000"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -14,7 +15,7 @@
         android:layout_height="61dp"
         android:layout_gravity="bottom"
         android:accessibilityLiveRegion="none"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/backgroundColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -24,7 +25,7 @@
         android:layout_height="30dp"
         android:layout_marginBottom="4dp"
         android:background="?android:attr/selectableItemBackground"
-        android:foregroundTint="#000000"
+        android:foregroundTint="@color/textColor"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Min resa"
-        android:textColor="#000000"
+        android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageButton6"
         app:layout_constraintStart_toStartOf="@+id/imageButton6" />
@@ -48,7 +49,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="60dp"
         android:background="?android:attr/selectableItemBackground"
-        android:backgroundTint="#090909"
+        android:backgroundTint="@color/backgroundColor"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Sök resa"
-        android:textColor="#000000"
+        android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="@+id/imageButton3" />
@@ -82,28 +83,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Karta"
-        android:textColor="#000000"
+        android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageButton4"
         app:layout_constraintStart_toStartOf="@+id/imageButton4" />
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:layout_marginTop="5dp"
-        android:background="@color/purple_500"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <View
-        android:id="@+id/view4"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:layout_marginBottom="15dp"
-        android:background="@color/purple_500"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

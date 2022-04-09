@@ -8,11 +8,19 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.RadioButton
+import androidx.appcompat.app.AppCompatDelegate
 import java.lang.reflect.Type
 import java.security.acl.Group
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        //Check if dark mode
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+            setTheme(R.style.Theme_MyApplicationDark)
+        } else {
+            setTheme(R.style.Theme_MyApplication)
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val buttonClick = findViewById<ImageButton>(R.id.imageButton4)
